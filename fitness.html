@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" class="cssall supports cssfilters csstransforms3d csstransitions mdl-js">
+<head>
+	<title>fitness</title>
+	  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+  body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    ;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+    background-color: #1abc9c; /* Green */
+    color: #ffffff;
+  }
+  .bg-2 { 
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+  }
+  .bg-3 { 
+    background-color: #ffffff; /* White */
+    color: #555555;
+  }
+  .bg-4 { 
+    background-color: #2f2f2f; /* Black Gray */
+    color: #fff;
+  }
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+ }
+  </style>
+</head>
+<body>
+<!---- nav bar-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">TOUR</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="home.html">Home</span></a>
+      <a class="nav-item nav-link active" >fitness  <span class="sr-only">(current)</a>
+      <a class="nav-item nav-link" href="#">places</a>
+      <a class="nav-item nav-link" href="#">food</a>
+    </div>
+  </div>
+</nav>
+
+
+
+<!--- card to bmi calculattor----->
+<div class="card" style="width: 50 type-center;">
+  <img src="new.png" class="card-img-top" alt="new">
+  <div class="card-body">
+    <h1 class="card-title"  style="type-center";>CALCULATE YOUR FITNESS AND GET TIPS</h1>
+    
+    <p class="card-text"class="w-50 m-auto" style="width: 20"><strong> Health and fitness are the basic need of todays world so we calculate your bmi and provide you all ways to manage your health</strong></p>
+  </div>
+  <div class="card-body">
+   <form class="w-50 m-auto" onsubmit="return false">
+   		<div class="form-group">
+   			<label>weight:</label>
+   			<input type="number" name="" placeholder="weight in kg" required id="weight" class="form-control">
+   		</div>
+   		<div class="form-group">
+   			<label>height:</label>
+   			<input type="number" name="" placeholder="height in feet" required id="height" class="form-control">
+   		</div>
+   		<div class="form-group">
+   			<label>BMI value:</label>
+   			<output type="number" name="" id="value" class="form-control"></p>
+   		</div>
+   		<div ><button type="submit" class="btn btn-success" onclick="getvalue()">check BMI</button>
+   			<button type="submit" class="btn btn-success" ><a style="color: white;" id="myLink" href="link">Tips for you</a></button>
+   </form>
+  </div>
+ 
+    <div class="card-footer text-center">
+    A healthy BMI ranges between 19 and 25
+  	</div>
+</div>
+<script type = "text/javascript">
+	function getvalue()
+	{
+	 	var weight = document.getElementById('weight').value;
+	 	var height = document.getElementById('height').value;
+	 	height = height * 12;
+	 	height =height * 0.025;
+	 	var bmi = weight / (height * height);
+	 	document.getElementById('value').value = bmi
+	 	    	if(bmi < 19)
+    		{ var link = "Hello";
+    document.getElementById('myLink').setAttribute("href","https://google.com");
+    document.getElementById('myLink').innerText = link;}
+    else if(19<bmi&&bmi<25)
+        { var link = "home.html";
+    document.getElementById('myLink').setAttribute("href",link);
+    document.getElementById('myLink').innerHTML = link;
+    }
+    else if (bmi>25)
+    { var link = "firstproject.html";
+    document.getElementById('myLink').setAttribute("href",link);
+    document.getElementById('myLink').innerHTML = link;
+    }
+    	
+	}
+
+</script> 
+<script type="text/javascript">
+	    { var link = "fitness.html";
+    document.getElementById('myLink').setAttribute("href",link);
+    document.getElementById('myLink').innerHTML = link;
+    }
+</script>
+
+
+
+
+<!--about us--->
+<link rel="stylesheet" type="text/css" href="./About Us _ Website.com_files/aboutus.css">
+<div id="ourStory" class="container text-center" style="background-color:lightgray;">
+	<div class="wrapper clearfix">
+		<div class="left">
+			<div class="heading"><h1>Our Story</h1></div>
+		</div>
+		<div class="right">
+			<p>
+				
+			</p>
+			<p>
+				
+			</p>
+			<p>
+				we provide you a fitness, food , tourist places, all at one site.
+			</p>
+			<p>
+				we also developing our selves you can also provide us a suggesion.
+			</p>
+		</div>
+	</div>
+</div>
+<div id="owner" class="container text-center" style="background-color:#3c3c3c;">
+	<div class="wrapper clearfix">
+		<div class="left">
+			<div class="heading"><h1 style="color:white;">   Owner  </h1></div>
+		</div>
+	
+			
+ 
+    <div class="container text-center">
+    	<p>
+				<h3 style="color:white;">sanyam jain</h3>
+			</p>
+			<p><strong style="color:white;">buisness tycoon</strong>
+				
+			</p>
+			<div class="container text-center">
+     
+      <br>
+      <div>
+      	<p>
+      <img src="sanyam.jpg"  width="260" height="350" alt="sanyam jain">
+    </div></div>
+		</div></p>
+	</div>
+</div>
+
+<!--   FORM-->
+<div class="container">
+  <h3 class="text-center">Contact</h3>
+  <p class="text-center"><em>We love our fans!</em></p>
+  <div class="row test">
+    <div class="col-md-4">
+      <p>Fan? Drop a note.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>Delhi, INDIA</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>Email: sanyamjain587@gmail.com</p>
+    </div>
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+      <div class="row">
+        <div class="col-md-12 form-group">
+          <button type="submit" class="btn btn-success" onclick="submit">submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="container-fluid bg-4 text-center">
+  <p>Design by sanyam jain</p> 
+</footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
